@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&display=swap');
+
+body{
+    font-family: 'noto sans','sacs-serif';
+}
+img{
+    width:30rem;
+    height:25rem;
+
+}
+html{
+        font-size:10px;
+ }
+
+a{
+text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.btn{
+    padding:0.7rem 1.2rem;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 18px;
+}
+.btn:hover{
+cursor: pointer;
+transform:  translateY(-2px);
+}
+
+.btn-red{
+    background-color: rgb(199, 0, 0);
+    border:3px solid rgb(11, 11, 11);
+    color: white;
+}
+
+.btn-yellow{
+    background-color: rgb(223, 223, 15);
+    border:3px solid rgb(11, 11, 11);
+    color: white;
+}
+
+.btn-pink{
+    background-color: rgb(204, 87, 106);
+    border:3px solid rgb(11, 11, 11);
+    color: white;
+}
+
+.model-card{
+    padding: 1rem;
+    border-radius: 8px;
+    border:3px solid rgb(19, 18, 18);
+    width:75%;
+    max-width:30rem;
+    margin: 1rem auto;
+    border-color: rgb(12, 10, 7);
+    position: relative;
+    transform: translateY(-1000px);
+    transition: all 0.5s ease-in;
+    z-index: 1001;
+}
+
+.model-show{
+    transform: translateY(-2px);
+}
+
+.model-header{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    
+    
+
+}
+
+.model-body{
+    text-align: justify;
+
+}
+
+.model-body p{
+    font-size: 1.5rem;
+}
+
+
+.btn-close{
+    
+    position:absolute ;
+    right: 10px;
+    top:10px;
+    z-index:1002;
+
+}
+
+.btn-close button{
+    position: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(3, 3, 3);
+    color: rgb(240, 223, 223);
+    cursor: pointer;
+
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:none ;
+    z-index: 1000;
+   visibility: hidden;
+   transition: all 0.5s ease;
+}
+
+.show{
+    transform:translateY(30px);
+    visibility: visible;
+}
+.main-title{
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+    text-decoration-line: underline ;
+    color: green;
+}
